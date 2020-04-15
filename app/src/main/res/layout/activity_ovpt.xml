@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ovpt">
+
+    <Button
+        android:id="@+id/home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Home"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Terrorist"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/blong"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/home" />
+
+    <Button
+        android:id="@+id/swapte"
+        android:layout_width="64dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Swap"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/along"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A long"
+        app:layout_constraintBottom_toTopOf="@+id/ashort"
+        app:layout_constraintEnd_toStartOf="@+id/blong"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/ashort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A short"
+        app:layout_constraintBottom_toTopOf="@+id/mid"
+        app:layout_constraintEnd_toStartOf="@+id/bshort"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/along" />
+
+    <Button
+        android:id="@+id/mid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Middle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/under"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ashort" />
+
+    <Button
+        android:id="@+id/blong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="B long"
+        app:layout_constraintBottom_toTopOf="@+id/bshort"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/along"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bshort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="B short"
+        app:layout_constraintBottom_toTopOf="@+id/under"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ashort"
+        app:layout_constraintTop_toBottomOf="@+id/blong" />
+
+    <Button
+        android:id="@+id/under"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Underpass"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/mid"
+        app:layout_constraintTop_toBottomOf="@+id/bshort" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
